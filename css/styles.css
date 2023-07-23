@@ -497,6 +497,73 @@ footer {
   margin-right: 120px;
 }
 
+.footer-address {
+  margin-right: 80px;
+}
+
+.footer-form-text {
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-form-conteiner {
+  display: flex;
+}
+
+.footer-form {
+  height: 40px;
+  width: 264px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  margin-right: 24px;
+}
+
+.footer-form::placeholder {
+  color: var(--white, #fff);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-form-btn {
+  color: var(--white, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  height: 40px;
+  width: 165px;
+  background-color: var(--iris);
+  border-radius: 4px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:is(:hover, :focus) {
+  background-color: var(--ocean);
+}
+
+.footer-form-icon {
+  margin-left: 16px;
+  fill: var(--white);
+}
+
 /**------ PORTFOLIO PAGE ----------**/
 
 .portfolio-section {
@@ -751,6 +818,8 @@ footer {
 }
 
 .check-text {
+  margin-top: 16px;
+  margin-bottom: 24px;
   color: var(--iconcolor);
   font-size: 12px;
   line-height: 1.17;
@@ -772,4 +841,42 @@ footer {
   border-radius: 2px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   margin-right: 8px;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-box {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.modal-check:focus + .check-box {
+  border-color: var(--ocean);
+}
+
+.modal-send-btn {
+  color: var(--white);
+  font-family: Roboto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  height: 56px;
+  width: 169px;
+  border-radius: 4px;
+  background-color: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-send-btn:is(:hover, :focus) {
+  background-color: var(--ocean);
 }

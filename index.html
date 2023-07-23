@@ -533,6 +533,22 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="footer-form-text">Subscribe</p>
+          <form class="footer-form-conteiner">
+            <input
+              type="email"
+              name="footeremail"
+              class="footer-form"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-btn">
+              Subscribe<svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send-fly"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -602,15 +618,19 @@
           </label>
 
           <label class="check-text"
-            ><input type="checkbox" name="usercheck" value="one" /><span
-              class="check-box"
-              ><svg class="check-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-property-click"></use></svg></span
+            ><input
+              type="checkbox"
+              name="usercheck"
+              value="one"
+              class="modal-check visually-hidden"
+            /><span class="check-box"
+              ><svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use></svg></span
             >I accept the terms and conditions of the
             <a href="" class="privacy-link">Privacy Policy</a></label
           >
 
-          <button type="submit">Send</button>
+          <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
     </div>
