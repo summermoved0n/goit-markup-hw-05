@@ -822,7 +822,7 @@ footer {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--navyblue);
+  color: rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -847,7 +847,7 @@ footer {
   color: var(--iris);
 }
 
-.check-text span{
+.check-box{
   display: inline-flex;
   align-items: center;
   justify-content: center;
