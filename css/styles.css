@@ -512,6 +512,7 @@ footer {
 
 .footer-form-conteiner {
   display: flex;
+  gap: 24px;
 }
 
 .footer-form {
@@ -522,26 +523,26 @@ footer {
   border: 1px solid var(--white, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  margin-right: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-form::placeholder {
   color: var(--white, #fff);
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 
 .footer-form-btn {
   color: var(--white, #fff);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  cursor: pointer;
   height: 40px;
-  width: 165px;
+  min-width: 165px;
   background-color: var(--iris);
   border-radius: 4px;
   border: none;
